@@ -1,0 +1,63 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "sunil013",
+  "password": "sunil.013",
+  "name": "sunil kumar",
+  "gender": "male"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN1bmlsMDEzIiwiaWF0IjoxNjU4NTUxNjExfQ.WlpylZAB5HDlZ1qjLucv9rW9f6gRe-AlfKYxSApJAvY
+
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/tweets/8/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/tweets/7/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+
+###
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
+Content-Type: application/json
+
+{
+   "tweet": "The Mornings..."
+}
+
+###
+DELETE http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjU4NTUyMTcwfQ.D4QAJ5ytm68xN24d8PASB_ti48Y2Ndu3HJZibWVexjs
